@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_receber_provas"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.meuappfirebase.ReceberProvas">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/image_book"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/book"
+            android:layout_centerVertical="true"
+            android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/image_book"
+                android:background="@android:color/darker_gray"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/image_book"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"
+            android:text="Provas Cadastradas :"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/ok"
+            android:onClick="voltar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ok"
+            android:textColor="@android:color/white"
+            android:layout_alignParentBottom="true"
+            android:background="#00897B"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative"
+            android:layout_above="@id/ok"
+            android:layout_marginBottom="8dp">
+
+
+        <TextView
+            android:id="@+id/provas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:textSize="14sp"
+            android:textColor="@android:color/black"/>
+
+        </ScrollView>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.meuappfirebase.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/image_student"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/student"
+            android:layout_marginTop="16dp"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Bem vindo ! Escolha uma opção abaixo"
+            android:layout_below="@id/image_student"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"/>
+
+
+        <RelativeLayout
+            android:id="@+id/relative"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+
+        <ImageView
+            android:id="@+id/image_enviar"
+            android:src="@drawable/enviar"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/enviar"
+                android:onClick="enviar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00897B"
+                android:layout_toRightOf="@id/image_enviar"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="16dp"
+                android:layout_marginLeft="16dp"
+                android:textColor="@android:color/white"
+                android:text="Cadastrar Provas" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative_visualizar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/relative">
+
+        <ImageView
+            android:id="@+id/image_receber"
+            android:src="@drawable/receber"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/receber"
+                android:onClick="receber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00897B"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/image_receber"
+                android:text="Visualizar Provas" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative_alterar"
+            android:layout_below="@id/relative_visualizar">
+
+            <ImageView
+                android:id="@+id/image_alterar"
+                android:src="@drawable/lock"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="16dp"
+                android:layout_centerVertical="true"/>
+
+            <Button
+                android:id="@+id/alterar"
+                android:onClick="alterar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#00897B"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/image_alterar"
+                android:text="Alterar Senha" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/usuario"
+            android:onClick="sair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="16dp"
+            android:textSize="12sp"
+            android:text="Você esta logado. Clique aqui para sair"/>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
